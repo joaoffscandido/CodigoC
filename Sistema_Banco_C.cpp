@@ -13,9 +13,9 @@ void menu_principal (){
 	printf ("No que podemos ajudar?");
 	printf ("\n\n");
 	printf("[1] - Consultar Saldo\n");
-	printf("[2] - Cartï¿½es\n");
+	printf("[2] - Cartões\n");
 	printf("[3] - Investimentos\n");
-	printf("[4] - Crï¿½dito\n");
+	printf("[4] - Crédito\n");
 	printf("[5] - Outros\n");
 	printf("[9] - Fale Conosco\n");
 	printf("\n\n");
@@ -37,13 +37,13 @@ int main (void){
 	system ("cls");
 	
 	menu_principal();
-	printf ("Por favor, escolha uma das opï¿½ï¿½es acima: ");
+	printf ("Por favor, escolha uma das opções acima: ");
 	scanf ("%d", &opcao_menu);
 	
 	switch (opcao_menu){
 		case (1) : 
 			printf ("\n");
-			printf ("Seu saldo ï¿½ igual a: R$ 0");
+			printf ("Seu saldo é igual a: R$ 0");
 			printf ("\n");
 			printf ("Retornar? [S/N]: ");
 			gets (retorno_primeiro);	
@@ -55,16 +55,16 @@ int main (void){
 				menu_principal;
 			} 
 			else {
-				printf ("Nï¿½s do Banco Invest agradecemos pela preferï¿½ncia");
+				printf ("Nós do Banco Invest agradecemos pela preferência");
 			}
 			break;
 			
 		case (2) :
 			system ("cls");
 			printf ("\n");
-			printf ("Limite disponï¿½vel: R$ 1.000,00");
+			printf ("Limite disponível: R$ 1.000,00");
 			printf ("\n\n");
-			printf ("Posiï¿½ï¿½o de 06/06/2022");
+			printf ("Posição de 06/06/2022");
 			printf ("\n\n");
 			printf ("Ver fatura? [S/N]: ");
 			gets (ver_fatura);	
@@ -87,17 +87,17 @@ int main (void){
 		case (3) :
 			system ("cls");
 			printf ("\n");	
-			printf ("Vocï¿½ nï¿½o possui nenhum investimento no momento");
+			printf ("Você não possui nenhum investimento no momento");
 			printf ("\n");
-			printf ("[1] - Aplicaï¿½ï¿½es\n");
+			printf ("[1] - Aplicações\n");
 			printf ("[2] - Resgate\n");
 			printf ("[3] - Extrato\n");
 			printf ("[4] - Rentabilidade\n");
 			printf ("[5] - Perfil do Investidor\n");
-			printf ("[6] - Conteï¿½do\n");
+			printf ("[6] - Conteúdo\n");
 			printf ("[7] - Gerenciador de Investimentos\n");
 			printf ("[9] - Retornar\n\n");
-			printf ("Digite apenas o nï¿½mero da opï¿½ï¿½o que deseja\n\n");
+			printf ("Digite apenas o número da opção que deseja\n\n");
 			scanf ("%d", opcao_investimento);
 			getchar ();
 			return 0;
@@ -105,8 +105,8 @@ int main (void){
 			
 		case (4) :
 			printf ("\n");
-			printf ("Ops, essa opï¿½ï¿½o ainda nï¿½o estï¿½ disponï¿½vel para vocï¿½\n");
-			printf ("Por favor entre em contato com a sua agï¿½ncia");
+			printf ("Ops, essa opção ainda não está disponível para você\n");
+			printf ("Por favor entre em contato com a sua agência");
 			break;
 			
 		case (5) :
@@ -114,10 +114,10 @@ int main (void){
 			printf ("\n");		
 			printf ("[1] - Fazer um Pix\n");
 			printf ("[2] - Pagar uma conta\n");
-			printf ("[3] - Fazer uma transferï¿½ncia\n");
+			printf ("[3] - Fazer uma transferência\n");
 			printf ("[4] - Ver meus comprovanten\n");
 			printf ("[9] - Retornar\n\n");
-			printf ("Digite apenas o nï¿½mero da opï¿½ï¿½o que deseja\n\n");
+			printf ("Digite apenas o número da opção que deseja\n\n");
 			scanf ("%d", opcao_outros);
 			getchar ();
 			return 0;
@@ -127,14 +127,14 @@ int main (void){
 			system ("cls");
 			printf ("[1] - Falhas no Sistema\n");	
 			printf ("[2] - Ouvidoria\n");
-			printf ("[3] - Sugestï¿½es\n");
+			printf ("[3] - Sugestões\n");
 			printf ("[4] - Elogios\n");
 			printf ("[9] - Retornar\n\n");
-			printf ("Digite apenas o nï¿½mero da opï¿½ï¿½o que deseja\n\n");
+			printf ("Digite apenas o número da opção que deseja\n\n");
 			scanf ("%d", opcao_fale_conosco);
 		
 		default	:
-			printf ("\nOpï¿½ï¿½o invï¿½lida, por favor tente novamente");
+			printf ("\nOpção inválida, por favor tente novamente");
 		}
 	
 	
